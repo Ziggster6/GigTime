@@ -1,0 +1,147 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+html, body{
+    background-color: #03516a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.ozadje{
+    background-color: white;
+    padding: 30;
+    margin: 80 30 0 30;
+    border-radius: 5px;
+    height: auto;
+}
+
+.spodaj{
+    overflow: hidden;
+}
+
+.levo{
+    background-color: white;
+    width: 420;
+    height: auto;
+    float: left;
+    margin-right: 30;
+}
+
+.levoInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sredinaLevo{
+    float: left;
+    width: 420;
+    margin-right: 30;
+}
+
+.sredinaDesno{
+    float: left;
+    width: 420;
+    margin-right: 30;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 400;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.desno{
+    width: 420;
+    float: left;
+}
+
+#map{
+    width: 100%;
+    height: 400;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+#autocomplete{
+    width: 100%;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 15;
+    margin-top: 30;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 1;
+    
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-left: 15px;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
+
+#hiddenAddress{
+    margin-top: 5;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .levo, .sredina, .desno{
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (max-device-width: 480px){
+    .levo, .sredina, .desno{
+        width: 100%;
+        
+    }
+}

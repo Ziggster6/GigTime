@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+html, body{
+    background-color: #03516a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.levo, .desno{
+    float: left;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.levo{
+    padding: 100 40 70 40;
+}
+
+.gumb{
+    margin-top: -17;
+    background-color: white;
+    padding: 5
+}
+
+.nav-tabs{
+    background-color: white;
+}
+
+.tab-pane{
+    overflow: auto;
+    max-height: 100%;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+.table{
+    background-color: white;
+    border-radius: 5;
+    height: auto;
+}
+
+td{
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 1250px){
+    .levo, .desno{
+        width: 100%;
+    }
+    
+    .levo{
+        height: auto;
+        overflow: auto;
+    }
+    
+    .desno{
+        margin-bottom: 20;
+        padding-left: 40;
+        padding-right: 40;
+    }
+    
+    table{
+        height: 50;
+    }
+    
+    #map{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    .levo, .desno{
+        width: 100%;
+    }
+}

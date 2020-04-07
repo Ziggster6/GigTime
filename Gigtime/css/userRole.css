@@ -1,0 +1,59 @@
+body {
+    background-color: #03516a;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.izbiri{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.vprasanje{
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+}
+
+.levo{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.levo:hover{
+    background-color: #007fa8;
+}
+
+.desno{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.desno:hover{
+    background-color: #007fa8;
+}
+
+.izbira{
+    position: absolute;
+    top: 50%;
+    margin-left: 18%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,42 @@
+<script>
+                        function myMap() {
+                            var myLatLng = {lat: -25.363, lng: 131.044};
+                            
+                            var mapProp= {
+                                center: myLatLng,
+                                zoom:5,
+                            };
+                            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                            
+                            var contentString = 
+                                '<div id="content">'+
+                                '<div id="siteNotice">'+
+                                '</div>'+
+                                '<h1 id="firstHeading" class="firstHeading">Concert Name - Band Name</h1>'+
+                                '<div id="bodyContent">'+
+                                '<img src="https://images-na.ssl-images-amazon.com/images/I/C1YRnQIzuTS._SL1000_.png" style="width:400px;height:200px;">'+
+                                '<ol>'+
+                                '<li>Date</li>'+
+                                '<li>Tickets</li>'+
+                                '</ol>'+
+                                '<p>Band/Gig description'+
+                                '</div>'+
+                                '</div>';
+                            
+                            var infowindow = new google.maps.InfoWindow({
+                                content: contentString
+                            });
+
+                            var marker = new google.maps.Marker({
+                                position: myLatLng,
+                                map: map,
+                                title: 'Uluru (Ayers Rock)'
+                            });
+                            
+                            marker.addListener('click', function() {
+                                infowindow.open(map, marker);
+                            });
+                        }
+                    </script>
+                    
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5kE3PjFpshQzI1eH_isjZq3tPGF-4Vq0&callback=myMap"></script>
